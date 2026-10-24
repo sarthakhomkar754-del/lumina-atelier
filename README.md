@@ -104,8 +104,8 @@ Executive management suite with real-time order fulfillment, RMA claim lifecycle
 
 ### 2. Installation
 ```bash
-git clone https://github.com/your-username/lumina-ecommerce.git
-cd lumina-ecommerce
+git clone https://github.com/sarthakhomkar754-del/lumina-atelier.git
+cd lumina-atelier
 npm install
 ```
 
