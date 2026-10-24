@@ -1,0 +1,72 @@
+/* App Specific Responsive Layouts and Utilities */
+
+/* Container and layout */
+.app-container {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Catalog responsive grid layout */
+.catalog-grid-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Responsive display helpers */
+.hide-mobile {
+  display: inline-block;
+}
+
+.hide-tablet {
+  display: flex;
+}
+
+.show-tablet-flex {
+  display: none !important;
+}
+
+/* Tablet & Mobile Breakpoints */
+@media (max-width: 960px) {
+  .catalog-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .filter-sidebar-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .hide-tablet {
+    display: none !important;
+  }
+
+  .show-tablet-flex {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .drawer-content {
+    max-width: 100%;
+  }
+
+  .modal-overlay {
+    padding: 0.5rem;
+  }
+}
+
+/* Hover effects */
+.hero-img-hover:hover {
+  transform: scale(1.05);
+}
