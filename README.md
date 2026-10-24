@@ -146,29 +146,28 @@ The application includes pre-configured 1-click demo accounts for testing all cu
 
 ---
 
-## 📦 Pushing to GitHub
+## 📦 Pushing to GitHub & Deploying to GitHub Pages
 
-To publish this project to your GitHub account:
-
+### Step 1: Push Repository to GitHub
 ```bash
-# 1. Initialize git (if not already initialized)
-git init
-
-# 2. Add all files including the screenshots folder
-git add .
-
-# 3. Commit the changes
-git commit -m "feat: complete LUMINA Atelier commercial platform with screenshots and documentation"
-
-# 4. Link your remote GitHub repository
+# Link your remote GitHub repository
 git remote add origin https://github.com/<your-username>/<your-repo-name>.git
 
-# 5. Push to main branch
+# Push to the main branch
 git branch -M main
 git push -u origin main
 ```
 
+### Step 2: Enable GitHub Pages (Automated via GitHub Actions)
+This repository includes a pre-configured GitHub Actions workflow ([.github/workflows/deploy.yml](.github/workflows/deploy.yml)):
+1. On GitHub, navigate to your repository's **Settings** tab.
+2. In the left sidebar, click **Pages** (under the "Code and automation" section).
+3. Under **Build and deployment > Source**, select **GitHub Actions** from the dropdown.
+4. That's it! GitHub will automatically trigger the deployment workflow and publish your site at:
+   `https://<your-username>.github.io/<your-repo-name>/`
+
 ---
+
 
 ## 📄 License
 
